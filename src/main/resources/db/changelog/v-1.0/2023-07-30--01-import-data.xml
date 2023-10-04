@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="import_table_peers" author="cnathali">
+        <loadData tableName="peers" file="db/data/import/peers.csv" />
+    </changeSet>
+
+    <changeSet id="import_table_tasks" author="cnathali">
+        <loadData tableName="tasks" file="db/data/import/tasks.csv" />
+    </changeSet>
+
+    <changeSet id="import_table_checks" author="cnathali">
+        <loadData tableName="checks" file="db/data/import/checks.csv" />
+    </changeSet>
+
+    <changeSet id="import_table_p2p" author="cnathali">
+        <loadData tableName="p2p" file="db/data/import/p2p.csv" />
+    </changeSet>
+
+    <changeSet id="import_table_verter" author="cnathali">
+        <loadData tableName="verter" file="db/data/import/verter.csv" />
+    </changeSet>
+
+
+    <changeSet id="import_table_xp" author="cnathali">
+        <loadData tableName="xp" file="db/data/import/xp.csv" />
+    </changeSet>
+
+    <changeSet id="import_table_friends" author="cnathali">
+        <loadData tableName="friends" file="db/data/import/friends.csv" />
+    </changeSet>
+
+
+    <changeSet id="import_table_recommendations" author="cnathali">
+        <loadData tableName="recommendations" file="db/data/import/recommendations.csv" />
+    </changeSet>
+
+
+    <changeSet id="import_table_timetracking" author="cnathali">
+        <loadData tableName="time_tracking" file="db/data/import/timetracking.csv" />
+    </changeSet>
+
+    <changeSet id="import_table_transferredPoints" author="cnathali">
+        <loadData tableName="transferred_points" file="/db/data/import/transferredpoints.csv" />
+    </changeSet>
+
+
+</databaseChangeLog>
